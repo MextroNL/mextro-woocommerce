@@ -658,6 +658,42 @@ button:active{
         }
 
     }
+    .woocommerce-Price-amount{
+        color: #ff6d00!important;
+    }
+
+    .product-name a{
+        color: #ff6d00;
+        text-decoration: underline;
+    }
+
+    .product-name a:hover{
+        color: #5A5A5A;
+    }
+    .cart-collaterals{
+        margin-bottom: 2vmax;
+    }
+
+    .single_add_to_cart_button {
+        margin-top: 0!important;
+        margin: auto!important;
+        letter-spacing: 1px!important;
+        border-radius: 100px!important;
+        background-color: #ff6d00!important;
+        color: #fff!important;
+        transition: .1s ease!important;
+    }
+
+    .single_add_to_cart_button:hover{
+       background-color: #5A5A5A!important;
+    }
+
+    .single_add_to_cart_button::before {
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f067";
+        font-weight:900;
+        margin-right:.2em;
+    }
 
         .woocommerce .orderby{/*Select*/
             border: 3px solid #ff6d00;
