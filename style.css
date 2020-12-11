@@ -481,6 +481,10 @@ button:active{
             font-size: 2vmax;
         }
 
+        .index-widget-title a{
+            color: #fff!important;
+        }
+
         .index-widget p{
             font-family: 'Abel', sans-serif;
             font-weight: 300;
@@ -490,6 +494,7 @@ button:active{
             padding-bottom: 1vmax;
             color: #fff;
         }
+
 
         .index-widget-icon{
             font-size: 7vmax;
@@ -601,6 +606,8 @@ button:active{
             background-color: #ff6d00;
             color: #fff;
             transition: .1s ease;
+            display: block;
+            text-align: center;
         }
 
         .woocommerce ul.products li.product .button:hover{
@@ -624,6 +631,8 @@ button:active{
             letter-spacing: 1px;
             font-weight: 600;
             transition: .1s ease;
+            display: block!important;
+            text-align: center;
         }
 
         .added_to_cart:hover{
@@ -752,7 +761,10 @@ button:active{
             margin: 0.5vmax 1.3vmax;
             position: absolute;
         }
-         .login-password:before{
+         .password-input{
+             width: 100%;
+         }
+         .password-input:before{
             content: "\f023"!important;
             font-family: 'Font Awesome 5 Free';
             color: #ff6d00;
@@ -1282,8 +1294,61 @@ button:active{
         padding-top: 4px;
         width: fit-content;
     }
+    .woocommerce-billing-fields__field-wrapper label{
+        display: none!important;
+    }
+
+    .woocommerce-billing-fields__field-wrapper input{
+        padding-left: 1vmax!important;
+    }
+
+    .woocommerce-form-login-toggle{
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+        padding: 1vmax 0.5vmax 1vmax 0.5vmax;
+        border: 3px solid #ff6d00;
+        border-radius: 1vmax;
+    }
+
+    .woocommerce-form-login-toggle .woocommerce-info{
+        color: #ff6d00;
+        font-weight: 700;
+        background-color: #fff;
+    }
+
+    .woocommerce-form-login-toggle .showlogin{
+        color: #ff6d00;
+        font-weight: 900;
+        text-decoration: underline;
+
+    }
+
+    .woocommerce-form-login-toggle .showlogin:hover{
+        color: #5A5A5A;
+    }
+
+   .required{
+        visibility: hidden!important;
+    }
+
+    .checkout h3{
+        text-align: center!important;
+    }
     .woocommerce-address-fields .woocommerce-input-wrapper{
         width: 100%;
+    }
+    .woocommerce-input-wrapper{
+          width: 100%!important;
+      }
+    .woocommerce-additional-fields textarea{
+        color: #ff6d00;
+        border-radius: 1vmax;
+        height: 19vmax!important;
+        border: 3px solid #ff6d00;
+        resize: none;
+        font-weight: 700;
+        padding: 1vmax;
     }
 
     .woocommerce-address-fields input::placeholder{
@@ -1292,6 +1357,22 @@ button:active{
         font-weight: 700;
         color: #ff6d00;
         opacity: 0.7;
+    }
+
+    #place_order{
+        margin-top: 0!important;
+        margin: auto;
+        letter-spacing: 1px;
+        border-radius: 100px;
+        background-color: #ff6d00;
+        color: #fff;
+        transition: .1s ease;
+        display: block;
+        text-align: center;
+    }
+
+    #place_order:hover{
+        background-color: #5A5A5A;
     }
     @media screen and (max-width: 575px) {
         .woocommerce-address-fields input{
@@ -1463,6 +1544,10 @@ button:active{
             }
         }
 
+        .grecaptcha-badge{
+            z-index: 300;
+            display: none;
+        }
     /*Post Style*/
         .post-block{
             margin-bottom: 5vmax;
@@ -2140,15 +2225,15 @@ select:focus{
 
 .go-back:hover{
     background-color: #5A5A5A;
-    color: #ff6d00;
+    color: #fff;
 }
 
 .go-back:hover i{
-    color: #ff6d00;
+    color: #fff;
 }
 
 .go-back:hover .terug{
-    color: #ff6d00;
+    color: #fff;
 }
 
 .go-back a:hover{
@@ -2156,11 +2241,11 @@ select:focus{
 }
 
 .go-back i{
-    color: #5A5A5A;
+    color: #fff;
     font-size: 1.5vmax;
 }
 .terug{
-    color: #5A5A5A;
+    color: #fff;
 }
 #pagetitle{
     display: inline-block;

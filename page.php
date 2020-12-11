@@ -21,6 +21,7 @@
             else:?>
                 <h2 id="results">Er is nog geen inhoud op deze pagina.</h2>
             <?php endif; ?>
+        <?php echo do_shortcode('[instagram-feed]'); ?>
     </div>
 
 <?php
@@ -49,5 +50,6 @@ if (strlen($content) < 240) {
 <!--    </script>-->
 
     <script type="text/javascript"> $('.block1content a').simpleLightbox(); </script>
+
 
 <?php get_footer(); ?>

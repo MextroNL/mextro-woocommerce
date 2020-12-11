@@ -162,10 +162,18 @@ function override_default_address_checkout_fields( $address_fields ) {
     $address_fields['address_1']['placeholder'] = 'Adresse';
     $address_fields['address_2']['placeholder'] = 'Lieu-dit, Appartement, bureau, etc. (optionnel)';
     $address_fields['postcode']['placeholder'] = 'Code postal';
+    $address_fields['phone']['placeholder'] = 'Téléphone';
     $address_fields['city']['placeholder'] = 'Ville/Village';
+    $address_fields['email']['placeholder'] = 'E-Mail';
     return $address_fields;
 }
 
+add_filter( 'woocommerce_checkout_fields' , 'override_billing_checkout_fields', 20, 1 );
+function override_billing_checkout_fields( $fields ) {
+    $fields['billing']['billing_phone']['placeholder'] = 'Téléphone';
+    $fields['billing']['billing_email']['placeholder'] = 'E-Mail';
+    return $fields;
+}
 
 
 ?>

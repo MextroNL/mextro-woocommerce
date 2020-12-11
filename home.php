@@ -48,7 +48,7 @@
         <h2><?php echo $gallery; ?></h2>
 <br><br>
 
-        <?php echo do_shortcode('[Best_Wordpress_Gallery id="2"]'); ?>
+        <?php echo do_shortcode('[instagram-feed]'); ?>
 
 
 

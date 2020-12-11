@@ -19,6 +19,8 @@
 <!--        <script src="--><?php //echo get_stylesheet_directory_uri(); ?><!--/resources/Lightbox/simpleLightbox.min.js"></script>-->
 
 
+        <?php
+        if (is_page( 'Contact' )){ echo "<style>.grecaptcha-badge{ display: block!important;}</style>";} ?>
 
         <?php include 'language-strings.php'; ?>
         <?php wp_head(); ?>
