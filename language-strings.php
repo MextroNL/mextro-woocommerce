@@ -23,7 +23,7 @@ if (strpos($url,'/en/') !== false) {
     $about = "En savoir";
     $gallery = "Gallerie";
     $about_link = "pro-tect";
-    $return_home = "Klik hier om terug te gaan naar de Home pagina.";
-    $error_message = "De opgevraagde pagina kon niet worden gevonden!";
+    $return_home = "Cliquez ici pour revenir à la page d'accueil.";
+    $error_message = "La page demandée n'a pu être trouvée!";
     $blog_error = "Il n'y a pas encore de nouvelles.";
 }

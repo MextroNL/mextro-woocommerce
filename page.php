@@ -13,7 +13,7 @@
                     while ( have_posts() ) : the_post();
                 //Page Content
                 ?>
-                    <div class="block1content">
+                    <div class="block1content"  <?php if (is_page( 'contact' )){ echo 'style="text-align:center!important"'; } ?>>
                         <?php the_content();?>
                     </div>
             <?php
@@ -21,7 +21,8 @@
             else:?>
                 <h2 id="results">Er is nog geen inhoud op deze pagina.</h2>
             <?php endif; ?>
-        <?php echo do_shortcode('[instagram-feed]'); ?>
+
+        <?php if (is_page( 'pro-tect' or 'nouvelles' or 'contact' )){ echo do_shortcode('[instagram-feed]'); } ?>
     </div>
 
 <?php
@@ -31,25 +32,7 @@ if (strlen($content) < 240) {
 }
 ?>
 
-<!--    <script type="text/javascript">-->
-<!---->
-<!--        if ($(".sent")[0]){-->
-<!--            var all = document.getElementsByClassName('wpcf7-mail-sent-ok');-->
-<!--            for (var i = 0; i < all.length; i++) {-->
-<!--                all[i].style.color = '#fff';-->
-<!--                all[i].style.backgroundColor = '#AEC5AD';-->
-<!--                all[i].style.border = '3px solid #719570';-->
-<!--                all[i].style.borderRadius = '1vmax';-->
-<!--                all[i].style.margin = 'auto';-->
-<!--                all[i].style.padding = '10px';-->
-<!--            }-->
-<!---->
-<!--        } else {-->
-<!--            // If class doesnt exist-->
-<!--        }-->
-<!--    </script>-->
 
-    <script type="text/javascript"> $('.block1content a').simpleLightbox(); </script>
 
 
 <?php get_footer(); ?>

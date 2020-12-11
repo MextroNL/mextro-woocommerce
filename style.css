@@ -1252,6 +1252,16 @@ button:active{
         width: auto!important;
     }
 
+    .woocommerce-shipping-destination{
+        display: none;
+    }
+
+    .woocommerce-orders-table a{
+        margin: auto 0.1vmax auto 0.1vmax!important;
+        width: 5vmax!important;
+        text-align: center;
+    }
+
 
     .woocommerce-Address a{
         width: 100%!important;
@@ -1287,6 +1297,17 @@ button:active{
         border-radius: 1vmax!important;
     }
     .woocommerce-address-fields button:hover{
+        background-color: #5A5A5A!important;
+    }
+
+    .wc-backward{
+        width: 100%!important;
+        margin: auto!important;
+        background-color: #ff6d00!important;
+        color: #fff!important;
+        border-radius: 1vmax!important;
+    }
+    .wc-backward:hover{
         background-color: #5A5A5A!important;
     }
     #billing_country_field label{
@@ -1338,6 +1359,33 @@ button:active{
         visibility: hidden!important;
     }
 
+
+        .order_details{
+            width: fit-content;
+            margin: auto auto 3vmax auto!important;
+        }
+
+    #paypal{
+        width: auto;
+        height: auto;
+        max-height: 35px!important;
+        margin: -2px 0 0 -2.5em!important;
+        position: absolute!important;
+    }
+
+    .wc_payment_method label{
+        color: #ebe9eb;
+    }
+
+#paypal:hover{
+        cursor: default!important;
+        transition: none!important;
+        -webkit-transform: scale(1)!important;
+        -moz-transform: scale(1)!important;
+        -ms-transform: scale(1)!important;
+        -o-transform: scale(1)!important;
+    }
+
     .checkout h3{
         text-align: center!important;
     }
@@ -1366,8 +1414,7 @@ button:active{
     }
 
     #place_order{
-        margin-top: 0!important;
-        margin: auto;
+        margin: 0 auto auto auto;
         letter-spacing: 1px;
         border-radius: 100px;
         background-color: #ff6d00;
@@ -1375,6 +1422,7 @@ button:active{
         transition: .1s ease;
         display: block;
         text-align: center;
+        width: 100%;
     }
 
     #place_order:hover{
@@ -1653,7 +1701,7 @@ button:active{
         .single-button:hover{
             text-decoration: none;
             background-color: #424041;
-            color: #ff6d00;
+            color: #fff;
         }
 
         .more-posts{
@@ -1815,6 +1863,17 @@ button:active{
     font-family: 'Abel', sans-serif;
     font-size: 1vmax;
     opacity: 0.7;
+    color: #fff;
+}
+.copyrightconstruction{
+    text-align: center;
+    margin: auto;
+    padding-top: 2vmax;
+}
+.copyrightconstruction a{
+    font-family: 'Abel', sans-serif;
+    font-size: 3vmax;
+    opacity: 1;
     color: #fff;
 }
 
@@ -2215,9 +2274,9 @@ select:focus{
 }
 
 .go-back{
-    display: inline-block;
-    float: left;
-    width: fit-content;
+    float: none;
+    margin: 1vmax auto 3vmax auto;
+    display: block;
     background-color: #ff6d00;
     padding: 0.5vmax;
     font-family: 'Abel', sans-serif;
@@ -2226,6 +2285,7 @@ select:focus{
     line-height: 2vmax;
     border-radius: 1vmax;
     cursor: pointer;
+    width: fit-content;
 }
 
 
@@ -2658,7 +2718,7 @@ select:focus{
 
 .verzend-knop{
     padding-left: 2.2vmax;
-    margin: auto;
+    margin: auto auto 3vmax auto;
     width: fit-content;
     width: -moz-fit-content;
     height: 3vmax;
@@ -2842,7 +2902,19 @@ textarea[aria-invalid="true"]::placeholder{
 .sent p{
     display: none;
 }
-
+/*Construction*/
+.constructionblock{
+    padding: 0;
+    padding-bottom: 20vmax
+}
+.construction-icon{
+    display: block;
+    text-align: center;
+    font-size: 8vmax;
+    height: auto;
+    transition: .1s ease;
+    color: #ff6d00;
+}
 
 /*404*/
 .errorblock{
@@ -2852,10 +2924,11 @@ textarea[aria-invalid="true"]::placeholder{
 
 .error-icon{
     display: block;
-    margin: auto;
-    width: 15vmax;
+    text-align: center;
+    font-size: 12vmax;
     height: auto;
     transition: .1s ease;
+    color: #ff6d00;
 }
 
 .error-icon:hover{
@@ -2909,6 +2982,85 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
 
 #bwg_container1_0 #bwg_container2_0 .bwg-container-0.bwg-standard-thumbnails .bwg-item0{
     background-color: #fff!important;
+}
+
+
+/*Post Page*/
+.single-post-thumbnail img{
+    display: block;
+    width: 32vmax;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.postlist-thumbnail img{
+    display: block;
+    width: 22vmax;
+    height: auto;
+    padding-bottom: 10px;
+    margin: auto;
+    cursor: pointer;
+    transition: .1s ease;
+
+}
+
+.postlist-thumbnail img:hover{
+    transition: .1s ease;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.post-description{
+    padding-left: 4vmax!important;
+}
+
+.post-gallery{
+    width: 32vmax;
+}
+
+.post-gallery img{
+    width: 6.2vmax;
+    height: 6.2vmax;
+}
+
+.post-block img{
+    transition: .1s ease;
+}
+
+.post-block img:hover{
+    transition: .1s ease;
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+@media screen and (max-width: 575px) {
+    .post-gallery{
+        width: 22vmax;
+    }
+    .post-gallery img{
+        width: 5vmax!important;
+        height: 5vmax!important;
+    }
+    .postlist-thumbnail img {
+        width: 21vmax!important;
+    }
+    .single-post-thumbnail img{
+        width: 22vmax;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .post-gallery img{
+        width: 5vmax!important;
+        height: 5vmax!important;
+    }
+}
+
+.extended-content{
+    display: none!important;
 }
 
 

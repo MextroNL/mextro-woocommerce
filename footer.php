@@ -13,6 +13,13 @@ if (is_page( 'Compte' ) ):
 </div>" ;
 endif;
 ?>
+<?php
+if ( is_product_category() ):
+    echo "<style>.footer-block{
+display: flex!important;
+}</style>" ;
+endif;
+?>
 <!--Theme Footer-->
 <footer class="container-fluid footer-block">
 
@@ -54,18 +61,7 @@ endif;
     </div>
 </footer>
 </div>
-<!--<script>-->
-<!--    VANTA.FOG({-->
-<!--        el: "#animated_bg",-->
-<!--        highlightColor: 0x799870,-->
-<!--        midtoneColor: 0x799870,-->
-<!--        lowlightColor: 0x799870,-->
-<!--        baseColor: 0x567925,-->
-<!--        blurFactor: 0.2,-->
-<!--        speed: 0.40,-->
-<!--        zoom: 0.50-->
-<!--    })-->
-<!--</script>-->
 <?php wp_footer(); ?>
+</div>
 </body>
 </html>
