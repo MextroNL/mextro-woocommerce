@@ -909,6 +909,12 @@ button:active{
             .woocommerce-form input::placeholder{
                 font-size: 2vmax;
             }
+            .woocommerce .woocommerce-input-wrapper input{
+                font-size: 2vmax;
+            }
+            .woocommerce .woocommerce-input-wrapper textarea{
+                font-size: 2vmax;
+            }
         }
 
 
@@ -1305,7 +1311,7 @@ button:active{
     .woocommerce-form-login-toggle{
         text-align: center;
         width: fit-content;
-        margin: auto;
+        margin: auto auto 3vmax auto;
         padding: 1vmax 0.5vmax 1vmax 0.5vmax;
         border: 3px solid #ff6d00;
         border-radius: 1vmax;
