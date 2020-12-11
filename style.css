@@ -2259,7 +2259,7 @@ select:focus{
 }
 
 .blogtitle{
-    margin: 1vmax auto 2vmax auto;
+    margin: 0px auto 2vmax auto;
     text-align: left!important;
     text-decoration: none;
     color: #ff6d00;
@@ -2344,6 +2344,7 @@ select:focus{
     transition: .1s ease;
     border: 5px solid #424041;
     border-radius: 20px;
+
 }
 
 
@@ -2399,8 +2400,11 @@ select:focus{
     font-weight: 300;
     font-size: 1.2vmax;
     width: 100%;
-    display: inline-block;
-    padding-top: 2vmax;
+    padding-top: 0!important;
+}
+
+.single-content p:first-of-type:first-letter{
+    font-size: 200%;
 }
 
 @media screen and (max-width: 575px) {
@@ -2991,6 +2995,7 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     width: 32vmax;
     height: auto;
     padding-bottom: 10px;
+    box-shadow: 5px 7px 6px #bbb;
 }
 
 .postlist-thumbnail img{

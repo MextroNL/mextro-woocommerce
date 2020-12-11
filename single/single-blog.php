@@ -17,29 +17,30 @@
                     </div>
 
 
-
                     <div class="row post-block" id="post-<?php the_ID(); ?>">
-                        <div class="col-6">
-                            <!-- Thumbnail -->
-                            <a href="<?php echo get_the_post_thumbnail_url() ?>"
-                               class="swipebox " rel="post-gallery-<?php the_ID(); ?>">
-                                <div class="single-post-thumbnail">
-                                    <?php echo the_post_thumbnail('small'); ?>
-                                </div>
-                            </a>
-                            <?php echo do_shortcode( '[post_gallery]' ); ?>
-                            <!-- Thumbnail End -->
-                        </div>
-                        <div class="specs col-6">
-                            <!-- Title -->
-                            <h2 class="blogtitle"><?php the_title(); ?></h2>
-                            <!-- Content -->
 
+                        <div class="col-md-12">
+                            <div class="image-wrapper float-left pr-3">
+
+                                <!-- Thumbnail -->
+                                <a href="<?php echo get_the_post_thumbnail_url() ?>"
+                                   class="swipebox " rel="post-gallery-<?php the_ID(); ?>">
+                                    <div class="single-post-thumbnail">
+                                        <?php echo the_post_thumbnail('small'); ?>
+                                    </div>
+                                </a>
+                                <?php echo do_shortcode( '[post_gallery]' ); ?>
+                                <!-- Thumbnail End -->
+                            </div>
+                            <div class="single-post-content-wrapper p-3 single-content">
+                                <h2 class="blogtitle"><?php the_title(); ?></h2>
+                                <h3 class="single-subtitle"><?php the_date(); ?></h3>
+                               <?php the_content(); ?>
+                            </div>
                         </div>
-                        <div class="single-content"><?php the_content(); ?></div>
                     </div>
 
-
+                </div>
 
                 </div>
 
